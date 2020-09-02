@@ -6,7 +6,9 @@
   "keywords": [],
   "author": "Kamil Smas",
   "license": "ISC",
+
   "scripts": {
+    "watch": "npm-watch",
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
@@ -32,12 +34,22 @@
     "mongodb": "3.0.7",
     "mongoose": "^5.5.14",
     "nodemon": "1.17.3",
+    "npm-watch": "^0.7.0",
     "query-string": "^6.7.0",
     "react-stripe-elements": "^3.0.0",
     "request": "^2.88.0",
     "stripe": "^7.1.0"
   },
+  "watch":{
+    "build": {
+      "patterns":[
+        "src"
+      ],
+      "extensions": "js,jsx"
+    }
+  },
   "engines": {
     "node": "8.12.0"
   }
+  
 }

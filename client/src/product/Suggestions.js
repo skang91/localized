@@ -10,7 +10,7 @@ import ViewIcon from 'material-ui-icons/Visibility'
 import Icon from 'material-ui/Icon'
 import Divider from 'material-ui/Divider'
 import Card, { CardContent, CardMedia } from 'material-ui/Card'
-import AddToCart from './../cart/AddToCart'
+
 
 const styles = theme => ({
   root: theme.mixins.gutters({
@@ -111,7 +111,7 @@ class Suggestions extends Component {
                         <ViewIcon className={classes.iconButton} />
                       </IconButton>
                     </Link>
-                    <AddToCart item={item} />
+   
                   </span>
                 </div>
               </div>
